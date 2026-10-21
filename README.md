@@ -1,4 +1,4 @@
-# The Montezer
+# Montezer Digital Voice Pedal
 
 A browser prototype of a guitar and bass pedal that turns every note you play into a human voice. Built with the Web Audio API in plain JavaScript, with no libraries and no build step.
 

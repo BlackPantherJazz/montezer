@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>
-<title>The Montezer</title>
+<title>Montezer Digital Voice Pedal</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,6 +44,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-siz
   display:grid;gap:28px}
 h1,h2,h3{font-family:var(--font-display);text-wrap:balance;margin:0;line-height:1}
 h1{font-size:clamp(40px,6vw,60px);font-weight:900;text-transform:uppercase;letter-spacing:.01em}
+.tagline{font-family:var(--font-display);font-weight:600;font-size:clamp(20px,2.6vw,26px);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:4px}
 h2{font-size:30px;font-weight:800;text-transform:uppercase;letter-spacing:.02em}
 h3{font-size:21px;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
 .lede{max-width:66ch;color:var(--muted);margin:10px 0 0}
@@ -169,7 +170,8 @@ code{font-family:var(--font-mono);font-size:.88em;background:var(--accent-soft);
 <main class="wrap">
   <header>
     <div class="eyebrow">Prototype · Web Audio API · YIN pitch tracking · formant synthesis</div>
-    <h1>The Montezer</h1>
+    <h1>Montezer</h1>
+    <div class="tagline">Digital Voice Pedal</div>
     <p class="lede">A working prototype of a guitar and bass pedal that sings. It tracks the note you play, builds a vocal buzz at that pitch, and shapes it into a vowel with four formant filters. Start the demo riff, then drag the dot around the vowel chart.</p>
   </header>
 
@@ -187,13 +189,13 @@ code{font-family:var(--font-mono);font-size:.88em;background:var(--accent-soft);
 
   <section class="rig">
     <!-- ===================== THE PEDAL ===================== -->
-    <div class="pedal" aria-label="Montezer pedal controls">
+    <div class="pedal" aria-label="Montezer Digital Voice Pedal controls">
       <span class="screw tl"></span><span class="screw tr"></span><span class="screw bl"></span><span class="screw br"></span>
       <div class="band red">
       <div class="brand">
         <div class="name">MONTEZER</div>
         <div style="display:flex;gap:10px;align-items:flex-end">
-          <div class="sub">vocal formant<br>pedal · rev 0.2</div>
+          <div class="sub">digital voice<br>pedal · rev 0.2</div>
           <span class="led on" id="led" aria-hidden="true"></span>
         </div>
       </div>
@@ -326,7 +328,7 @@ code{font-family:var(--font-mono);font-size:.88em;background:var(--accent-soft);
 
 <script>
 /* =====================================================================
-   THE MONTEZER
+   MONTEZER DIGITAL VOICE PEDAL
    Everything runs in the Web Audio API. Signal flow:
 
    source ─► input ─┬─► analyserIn ··· (pitch + loudness, read in tick())
