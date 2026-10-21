@@ -16,7 +16,7 @@ The Montezer uses the **source-filter model** of speech: a voice is a buzz (the 
 4. **Vocal tract:** four parallel bandpass filters at formants F1 to F4. Dragging around the F1/F2 vowel chart retunes them, and picking dynamics can open the vowel like a talking wah.
 5. **Output:** a dry/wet blend, a limiter, and a live spectrum display.
 
-**Modes:** *Singer* resynthesizes one voice from the tracked pitch. *Talk box* distorts the instrument itself and runs it through the formant filters, so chords work.
+**Modes:** *Singer* resynthesizes one voice from the tracked pitch. *Talk* (talk box) distorts the instrument itself and runs it through the formant filters, so chords work.
 
 ## Run it
 
