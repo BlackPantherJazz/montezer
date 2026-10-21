@@ -2,7 +2,7 @@
 
 A browser prototype of a guitar and bass pedal that turns every note you play into a human voice. Built with the Web Audio API in plain JavaScript, with no libraries and no build step.
 
-Dedicated to my mentor, Ti Plume.
+
 
 **Live demo:** https://blackpantherjazz.github.io/montezer/
 
